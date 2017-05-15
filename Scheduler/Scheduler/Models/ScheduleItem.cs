@@ -14,5 +14,7 @@ namespace Scheduler.Models
         public string Teacher { get; set; }
         public DateTime DateFrom { get; set; }
         public DateTime DateTo { get; set; }
+
+        public Standard Standard { get; set; }
     }
 }
