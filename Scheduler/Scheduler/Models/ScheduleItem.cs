@@ -15,6 +15,6 @@ namespace Scheduler.Models
         public DateTime DateFrom { get; set; }
         public DateTime DateTo { get; set; }
 
-        public Standard Standard { get; set; }
+        public Schedule Schedule { get; set; }
     }
 }

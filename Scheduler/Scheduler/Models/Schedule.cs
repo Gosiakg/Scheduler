@@ -5,15 +5,12 @@ using System.Web;
 
 namespace Scheduler.Models
 {
-    public class Schedule: DbContext
+    public class Schedule
     {
-        public Schedule(): base()
-        {
-            
-        }
-        //public IList<ScheduleItem> ScheduleItems { get; set; }
-        public DbSet<DateTime> DateFrom { get; set; }
-        public DbSet<DateTime> DateTo { get; set; }
+        
+        public IList<ScheduleItem> ScheduleItems { get; set; }
+        public DateTime DateFrom { get; set; }
+        public DateTime DateTo { get; set; }
     }
 
     
