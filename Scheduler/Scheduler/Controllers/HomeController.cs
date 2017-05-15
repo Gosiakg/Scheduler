@@ -15,7 +15,7 @@ namespace Scheduler.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Aplikacja Gosiaczka";
 
             return View();
         }
