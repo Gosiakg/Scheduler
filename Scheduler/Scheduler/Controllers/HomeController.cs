@@ -26,5 +26,11 @@ namespace Scheduler.Controllers
 
             return View();
         }
+
+        public ActionResult Initialize()
+        {
+            ScheduleDatabase.Initialize();
+            return new EmptyResult();
+        }
     }
 }

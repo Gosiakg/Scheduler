@@ -10,6 +10,8 @@ namespace Scheduler.Models
         {
 
         }
+
+        public long Id { get; set; }
         public string ClassroomName { get; set; }
         public string Teacher { get; set; }
         public DateTime DateFrom { get; set; }

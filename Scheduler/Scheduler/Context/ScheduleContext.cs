@@ -2,18 +2,18 @@
 using System;
 using System.Data.Entity;
 
-namespace Scheduler.Context
+namespace SchedulerDatabase
 {
         
     public class ScheduleContext : DbContext
 {
-    public ScheduleContext() : base()
+    public ScheduleContext() : base("name = ScheduleContext")
     {
 
     }
 
-    public DbSet<ScheduleItem> ScheduleItems { get; set; }
-    public DbSet<Schedule> Schedules { get; set; }
+    public virtual DbSet<ScheduleItem> ScheduleItems { get; set; }
+    public virtual DbSet<Schedule> Schedules { get; set; }
 
 }
 }
